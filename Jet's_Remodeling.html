@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Jet's Remodeling</title>
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <span>📍 Serving Chicago, IL &amp; Surrounding Areas</span>
+  <div style="display:flex;align-items:center;gap:20px;">
+    <span>☎ (773) 290-0131</span>
+    <div class="social">
+      <a href="#">f</a><a href="#">ig</a><a href="#">𝕡</a>
+    </div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a class="logo" href="#">
+    <div class="logo-icon">
+      <svg viewBox="0 0 24 24">
+        <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+        <polyline points="9 22 9 12 15 12 15 22"/>
+      </svg>
+    </div>
+    <div class="logo-text">
+      <span class="brand">Jet's Remodeling</span>
+      <span class="sub">· Interior Remodeling ·</span>
+    </div>
+  </a>
+
+  <!-- Mobile Hamburger Toggle Trigger Icons Wrapper Button -->
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+
+  <!-- Navigation Content Link Items Container Block (Added id="navLinks") -->
+  <div class="nav-links" id="navLinks">
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#testimonials">Reviews</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+  </div>
+  
+  <a class="btn-quote" href="#contact">Get a Free Quote</a>
+</nav>
+
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Beautiful Spaces. Better Living.</p>
+    <h1>Interior Remodeling<br>That Brings Your<br><em>Vision to Life</em></h1>
+    <p>We transform outdated spaces into beautiful, functional environments tailored to your lifestyle.</p>
+    <div class="hero-btns">
+      <a class="btn-primary" href="#services">Our Services</a>
+      <a class="btn-secondary" href="#projects">View Projects</a>
+    </div>
+  </div>
+  <div class="hero-badges">
+    <div class="hero-badge">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      High Quality Materials
+    </div>
+    <div class="hero-badge">
+      <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+      Expert Craftsmanship
+    </div>
+    <div class="hero-badge">
+      <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      On-Time Project Completion
+    </div>
+    <div class="hero-badge">
+      <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      Personalized Design Solutions
+    </div>
+    <div class="hero-badge">
+      <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      Licensed &amp; Insured
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services reveal" id="services">
+  <div class="services-header">
+    <p class="section-label">What We Do</p>
+    <h2 class="section-title">Comprehensive Interior<br><em>Remodeling Services</em></h2>
+    <div class="divider"></div>
+  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-img-wrap">
+        <img class="service-img" src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&q=80" alt="Kitchen">
+      </div>
+      <h3>Kitchen Remodeling</h3>
+      <p>Beautiful, functional kitchens designed for the heart of your home.</p>
+      <a class="learn-more" href="#">Learn More →</a>
+    </div>
+    <div class="service-card">
+      <div class="service-img-wrap">
+        <img class="service-img" src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=400&q=80" alt="Bathroom">
+      </div>
+      <h3>Bathroom Remodeling</h3>
+      <p>Spa-inspired bathrooms that combine style, comfort, and value.</p>
+      <a class="learn-more" href="#">Learn More →</a>
+    </div>
+    <div class="service-card">
+      <div class="service-img-wrap">
+        <img class="service-img" src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?w=400&q=80" alt="Living Room">
+      </div>
+      <h3>Living Room Remodeling</h3>
+      <p>Create inviting, stylish living spaces perfect for relaxing and entertaining.</p>
+      <a class="learn-more" href="#">Learn More →</a>
+    </div>
+    <div class="service-card">
+      <div class="service-img-wrap">
+        <img class="service-img" src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=400&q=80" alt="Room Additions">
+      </div>
+      <h3>Room Additions</h3>
+      <p>Seamless additions that expand your space and enhance your home.</p>
+      <a class="learn-more" href="#">Learn More →</a>
+    </div>
+    <div class="service-card">
+      <div class="service-img-wrap">
+        <img class="service-img" src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=400&q=80" alt="Design">
+      </div>
+      <h3>Design Consultation</h3>
+      <p>Expert guidance to help you plan and bring your dream space to life.</p>
+      <a class="learn-more" href="#">Learn More →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<div class="about reveal" id="about">
+  <div class="about-inner">
+    <div class="about-img">
+      <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=900&q=80" alt="About Jet's Remodeling">
+    </div>
+    <div class="about-content">
+      <p class="section-label">About Us</p>
+      <h2 class="section-title">We Believe Your Home Should Reflect <em>You</em></h2>
+      <div class="divider"></div>
+      <p class="section-sub">At Jet's Remodeling, we believe your home should reflect your lifestyle, personality, and needs. With years of experience in interior remodeling, our team is committed to delivering stunning results with unmatched attention to detail.</p>
+      <div class="stats-row">
+        <div class="stat">
+          <div class="stat-num">10<sup>+</sup></div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">500<sup>+</sup></div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">100<sup>%</sup></div>
+          <div class="stat-label">Customer Satisfaction</div>
+        </div>
+      </div>
+      <a class="btn-dark" href="#contact">Learn More About Us</a>
+    </div>
+  </div>
+</div>
+
+<!-- PROJECTS -->
+<section class="projects reveal" id="projects">
+  <div class="projects-header">
+    <div>
+      <p class="section-label">Featured Projects</p>
+      <h2 class="section-title">See the Transformation.<br><em>Get Inspired.</em></h2>
+    </div>
+    <div class="filter-tabs">
+      <button class="filter-tab active" onclick="filterProjects('all',this)">All</button>
+      <button class="filter-tab" onclick="filterProjects('kitchen',this)">Kitchen</button>
+      <button class="filter-tab" onclick="filterProjects('bathroom',this)">Bathroom</button>
+      <button class="filter-tab" onclick="filterProjects('living',this)">Living Room</button>
+      <button class="filter-tab" onclick="filterProjects('addition',this)">Additions</button>
+    </div>
+  </div>
+  <div class="projects-grid" id="projectsGrid">
+    <div class="project-card" data-cat="kitchen">
+      <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80" alt="Modern Kitchen">
+      <div class="project-overlay"><div class="project-overlay-content"><h4>Modern Kitchen</h4><p>Chicago, IL</p></div></div>
+    </div>
+    <div class="project-card" data-cat="bathroom">
+      <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&q=80" alt="Luxury Bathroom">
+      <div class="project-overlay"><div class="project-overlay-content"><h4>Luxury Bathroom</h4><p>Beverly Hills, CA</p></div></div>
+    </div>
+    <div class="project-card" data-cat="living">
+      <img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?w=600&q=80" alt="Open Concept Living">
+      <div class="project-overlay"><div class="project-overlay-content"><h4>Open Concept Living</h4><p>Pasadena, CA</p></div></div>
+    </div>
+    <div class="project-card" data-cat="addition">
+      <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&q=80" alt="Home Addition">
+      <div class="project-overlay"><div class="project-overlay-content"><h4>Home Addition</h4><p>Studio City, CA</p></div></div>
+    </div>
+  </div>
+  <div class="view-all-wrap">
+    <a class="btn-dark" href="#">View All Projects</a>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process reveal">
+  <div class="process-header">
+    <p class="section-label" style="color:var(--gold)">How It Works</p>
+    <h2 class="section-title" style="color:#fff">Our Remodeling <em>Process</em></h2>
+    <div class="divider" style="margin:20px auto;"></div>
+  </div>
+  <div class="process-steps">
+    <div class="process-step">
+      <div class="step-num">
+        <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+      </div>
+      <h4>1. Consultation</h4>
+      <p>We listen to your ideas and understand your vision.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-num">
+        <svg viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </div>
+      <h4>2. Design &amp; Plan</h4>
+      <p>Our designers create a custom plan tailored to your space.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-num">
+        <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+      </div>
+      <h4>3. Build &amp; Transform</h4>
+      <p>Skilled craftsmen bring your vision to life with precision.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-num">
+        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <h4>4. Final Reveal</h4>
+      <p>We walk you through the stunning transformation.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials reveal" id="testimonials">
+  <div class="testimonials-header">
+    <p class="section-label">What Our Clients Say</p>
+    <h2 class="section-title">Real Stories, Real <em>Results</em></h2>
+    <div class="divider"></div>
+  </div>
+  <div class="testi-grid">
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <p>"Jet's Remodeling completely transformed our kitchen! The team was professional, creative, and a pleasure to work with."</p>
+      <div class="testi-author">
+        <img class="testi-avatar" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Jessica M.">
+        <div>
+          <div class="testi-name">Jessica M.</div>
+          <div class="testi-loc">Chicago, IL</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <p>"From design to the final walkthrough, everything was seamless. Our bathroom is now our favorite place!"</p>
+      <div class="testi-author">
+        <img class="testi-avatar" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Mark T.">
+        <div>
+          <div class="testi-name">Mark T.</div>
+          <div class="testi-loc">Beverly Hills, CA</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <p>"They turned our vision into reality and exceeded our expectations. Highly recommend Jet's Remodeling!"</p>
+      <div class="testi-author">
+        <img class="testi-avatar" src="https://randomuser.me/api/portraits/women/68.jpg" alt="Sarah L.">
+        <div>
+          <div class="testi-name">Sarah L.</div>
+          <div class="testi-loc">Pasadena, CA</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG SECTION -->
+<section class="blog reveal" id="blog">
+  <div class="blog-header">
+    <div>
+      <p class="section-label">From Our Blog</p>
+      <h2 class="section-title">Design Tips, Trends &amp; <em>Inspiration</em></h2>
+    </div>
+    <a class="view-all-link" href="#">View All Blogs →</a>
+  </div>
+  <div class="blog-grid">
+    <div class="blog-card">
+      <div class="blog-img-wrap">
+        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80" alt="Blog 1">
+      </div>
+      <div class="blog-meta">May 10, 2025 · <span>Design Tips</span></div>
+      <h4>Top 10 Kitchen Remodeling Trends for 2025</h4>
+      <a class="read-more" href="#">Read More →</a>
+    </div>
+    <div class="blog-card">
+      <div class="blog-img-wrap">
+        <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&q=80" alt="Blog 2">
+      </div>
+      <div class="blog-meta">Apr 28, 2025 · <span>Inspiration</span></div>
+      <h4>Small Bathroom Ideas That Make a Big Impact</h4>
+      <a class="read-more" href="#">Read More →</a>
+    </div>
+    <div class="blog-card">
+      <div class="blog-img-wrap">
+        <img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?w=600&q=80" alt="Blog 3">
+      </div>
+      <div class="blog-meta">Apr 15, 2025 · <span>Remodeling</span></div>
+      <h4>Open Concept Living: Pros, Cons &amp; Design Ideas</h4>
+      <a class="read-more" href="#">Read More →</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND PANEL -->
+<div class="cta-band reveal">
+  <div class="cta-left">
+    <h2>Your Vision. Our Expertise. Exceptional Results.</h2>
+    <ul>
+      <li>Personalized designs tailored to you</li>
+      <li>Quality materials &amp; expert craftsmanship</li>
+      <li>Transparent pricing &amp; clear communication</li>
+    </ul>
+    <a class="btn-gold" href="#contact">Schedule a Consultation</a>
+  </div>
+  <div class="cta-right">
+    <div class="cta-right-content">
+      <h3>Ready to Transform Your Space?</h3>
+      <p>Let's create something beautiful together.</p>
+      <a class="btn-gold" href="#contact">Get a Free Quote</a>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT FORM SECTION -->
+<div class="contact reveal" id="contact">
+  <div class="contact-inner">
+    <div class="contact-left">
+      <p class="section-label" style="color:var(--gold)">Get In Touch</p>
+      <h2>Let's Start Your Remodeling Journey</h2>
+      <p>We'd love to hear about your project!</p>
+      <div class="contact-info">
+        <div class="contact-info-item">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .4h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.19a16 16 0 006.29 6.29l1.1-1.16a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          (773) 290-0131
+        </div>
+        <div class="contact-info-item">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          info@innerspaceremodeling.com
+        </div>
+        <div class="contact-info-item">
+          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Chicago, IL &amp; Surrounding Areas
+        </div>
+        <div class="contact-info-item">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Mon – Fri: 8:00 AM – 6:00 PM
+        </div>
+      </div>
+    </div>
+    <div class="contact-right">
+      <div class="form-group"><input type="text" placeholder="Full Name"></div>
+      <div class="form-group"><input type="email" placeholder="Email Address"></div>
+      <div class="form-group"><input type="tel" placeholder="Phone Number"></div>
+      <div class="form-group">
+        <select>
+          <option value="" disabled selected>Project Type</option>
+          <option>Kitchen Remodeling</option>
+          <option>Bathroom Remodeling</option>
+          <option>Living Room Remodeling</option>
+          <option>Room Addition</option>
+          <option>Design Consultation</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group"><textarea placeholder="Tell us about your project..."></textarea></div>
+      <button class="btn-send">Send Message</button>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER MARGINS -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a class="logo" href="#" style="padding:0;margin-bottom:4px;">
+        <div class="logo-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+        <div class="logo-text"><span class="brand">Jet's Remodeling</span><span class="sub">· Interior Remodeling ·</span></div>
+      </a>
+      <p>Creating beautiful, functional spaces that inspire better living.</p>
+      <div class="footer-socials">
+        <a href="#">f</a><a href="#">ig</a><a href="#">p</a><a href="#">in</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Quick Links</h5>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Our Services</h5>
+      <ul>
+        <li><a href="#services">Kitchen Remodeling</a></li>
+        <li><a href="#services">Bathroom Remodeling</a></li>
+        <li><a href="#services">Living Room Remodeling</a></li>
+        <li><a href="#services">Room Additions</a></li>
+        <li><a href="#services">Design Consultation</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Contact Us</h5>
+      <div class="contact-item">
+        <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .4h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.19a16 16 0 006.29 6.29l1.1-1.16a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        (773) 290-0131
+      </div>
+      <div class="contact-item">
+        <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        info@innerspaceremodeling.com
+      </div>
+      <div class="contact-item">
+        <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Chicago, IL &amp; Surrounding Areas
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Jet's Remodeling. All Rights Reserved.</p>
+    <div style="display:flex;gap:24px;">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Clean external script injection hook -->
+<script src="script.js"></script>
+</body>
+</html>
